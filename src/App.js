@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import './App.css';
-// import User from "./component/User"
-// import Button from "./component/Button"
+import TodoItem from "./component/TodoItem";
+// import TodoList from "./component/TodoList";
+
 
 
 const App = () => {
@@ -64,9 +65,9 @@ const App = () => {
       </div>
       <div className="listAdd">
         <div className="input-group">
-          <label className="list">제목</label>
+          <label className="form-label">제목</label>
           <input value={title} onChange={titleChageHandler} />
-          <label className="body">내용</label>
+          <label>내용</label>
           <input value={body} onChange={bodyChangeHandler} />
         </div>
         <button className="add-button" onClick={clickAddButtonHandler}>추가하기</button>
@@ -74,7 +75,7 @@ const App = () => {
       </div>
 
       <div className="lists">
-        <div className="list1">
+        <div className="list">
           <span>
             Working.. 🔥
           </span>
@@ -84,18 +85,7 @@ const App = () => {
                 .filter((todo) => todo.isDone === false)
                 .map((todo) => {
                   return (
-                    <div>
-                      <div className="todoTitle">
-                        {todo.title}
-                      </div>
-                      <div className="todoBody">
-                        {todo.body}
-                      </div>
-                      <button className="delete-button" onClick={() => clickRemoveHandler(todo.id)}>삭제하기</button>
-                      <button className="complete-button" onClick={() => completeHandler(todo.id)}>
-                        {todo.isDone ? "취소하기" : "완료하기"}
-                      </button>
-                    </div>
+                    <TodoItem todo={todo} clickRemoveHandler={clickRemoveHandler} completeHandler={completeHandler}/>
                   );
                 })}
             </div>
@@ -103,7 +93,7 @@ const App = () => {
         </div>
 
 
-        <div className="list2">
+        <div className="list">
           <span>
             Done..! 🎉
           </span>
@@ -114,18 +104,7 @@ const App = () => {
                 .filter((todo) => todo.isDone === true)
                 .map((todo) => {
                   return (
-                    <div>
-                      <div className="todoTitle">
-                        {todo.title}
-                      </div>
-                      <div className="todoBody">
-                        {todo.body}
-                      </div>
-                      <button className="delete-button" onClick={() => clickRemoveHandler(todo.id)}>삭제하기</button>
-                      <button className="complete-button" onClick={() => completeHandler(todo.id)}>
-                        {todo.isDone ? "취소하기" : "완료하기"}
-                      </button>
-                    </div>
+                    <TodoItem todo={todo} clickRemoveHandler={clickRemoveHandler} completeHandler={completeHandler}/>
                   );
                 })}
             </div>
@@ -138,4 +117,9 @@ const App = () => {
   );
 }
 
+
 export default App;
+
+
+{/* <TodoList title={'Working.. 🔥'} todo={todo} clickRemoveHandler={clickRemoveHandler} completeHandler={completeHandler}/>
+<TodoList title={'Done..! 🎉'} todo={todo} clickRemoveHandler={clickRemoveHandler} completeHandler={completeHandler}/> */}

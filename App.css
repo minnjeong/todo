@@ -1,0 +1,136 @@
+.layout {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 800px;
+  display: block;
+}
+
+.container {
+  font-size: 15px;
+  color: rgb(81, 116, 213);
+  align-items: center;
+  background-color: aliceblue;
+  border: 1px solid #d0e2ec;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-weight: 500;
+  
+}
+
+.input-group {
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  padding: 0 12px;
+  width: 240px;
+  display: contents;
+  
+}
+.input-group input{
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  padding: 0 12px;
+  width: 240px;
+}
+
+.add-button {
+  background-color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  color: rgb(81, 116, 213);
+  font-weight: 700;
+  height: 40px;
+  width: 140px;
+  float: right;
+}
+
+.listAdd {
+  background-color: #d0e2ec;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  font-weight: 700;
+}
+.form-label {
+  font-size: 16px;
+  font-weight: 700; 
+}
+
+.listAdd>input {
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  padding: 0 12px;
+  width: 240px;
+}
+
+.listWrapper{
+  display: contents;
+  flex-wrap: wrap;
+}
+.listContainer{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap
+}
+
+.listContainer>div{
+  display: block;
+  border: 2px solid #d0e2ec;
+  border-radius: 12px;
+  padding: 24px 24px 24px;
+  width: 270px;
+  gap:12px;
+  margin-top: 20px;
+}
+.listContainer>button{
+      border-radius: 8px;
+    cursor: pointer;
+    height: 40px;
+    width: 50%;
+}
+.list {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 20px ;
+}
+
+.delete-button{
+  color: rgb(241, 90, 30);;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  width: 45%;
+  margin-left: 10px;
+  background-color: #fff;
+  border: 2px solid  rgb(241, 90, 30);
+
+}
+
+.complete-button {
+  color: rgb(81, 116, 213);
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  width: 45%;
+  background-color: #fff;
+  border: 2px solid  rgb(81, 116, 213);
+  margin-left: 10px;
+  
+}
+
+.todoBody{
+  color: rgb(66, 66, 66);
+  font-size: 17px;
+  margin-bottom: 30px;
+  
+}
+
+.todoTitle{
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}

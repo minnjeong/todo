@@ -14,5 +14,5 @@
     
     
 ### 구동 화면   
-   <img width="80%" src="https://user-images.githubusercontent.com/124552434/232453959-53de849e-8846-4ca7-8278-6075852b638f.gif"
+   <img width="80%" src="https://user-images.githubusercontent.com/124552434/232453959-53de849e-8846-4ca7-8278-6075852b638f.gif"/>
 

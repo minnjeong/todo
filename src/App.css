@@ -55,10 +55,11 @@
   padding: 30px;
   font-weight: 700;
 }
-.list {
+.form-label {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 700; 
 }
+
 .listAdd>input {
   border: none;
   border-radius: 12px;
@@ -92,16 +93,10 @@
     height: 40px;
     width: 50%;
 }
-.list1 {
+.list {
   font-size: 25px;
   font-weight: 500;
   margin: 20px ;
-}
-
-.list2 {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 20px;
 }
 
 .delete-button{
